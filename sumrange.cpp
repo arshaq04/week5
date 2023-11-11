@@ -3,14 +3,20 @@
 
 using namespace std;
 
-int main(); {
+int main() {
 
+vector<int> nums;
 int x, y;
 cout << "Enter two numbers: ";
 cin >> x >> y;
+int sum = 0;
 
-int sum = x + y;
-cout << sum << endl;
-
+for (int i = x; i <= y; i++) {
+    while (i <= y) {
+        sum += i;
+        break;
+    }
+}
+cout << "Sum from " << x << " to " << y << " is " << sum << endl;
 return 0;
 }
